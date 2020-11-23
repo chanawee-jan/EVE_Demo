@@ -1,0 +1,88 @@
+
+<krpano>
+
+  <data name="pin_cod_addhs_sm">0</data>
+	
+	<addhs_settings  sound_close_click="false" 
+ 					 video_close_click="false" 
+ 					 youtube_close_click="false" 
+ 		   		/>
+	
+
+  <hotspot  name="hotspot_2" style="link_hs_sm"  url="%CURRENTXML%/assets/img/btn_click.png" distorted="false" alpha="1" enabled="true" visible="true" capture="true" depth="off" flying="0" handcursor="true" zorder="99" zoom="false"
+ 			ath="-21.4771" atv="17.5552" width="50" height="prop" rx="0" ry="0" rz="0" ox="0" oy="0" rotate="0" scale="1" edge="center"
+ 			install_onclick="5" name_hs="hotspot_2" scene_EL="scene_113" info_Ah="null" fov_EL="120" enabled2="true" visible2="true" drag_hs="true"
+ 			onclick="if(hotspot[hotspot_1].alpha === 0, tween(hotspot[hotspot_1].alpha,1),tween(hotspot[hotspot_1].alpha,0));"
+ 			onhover=""
+ 			onover=""
+ 			ondown="drag_LinkSM()"
+ 			onout=""
+ 			onloaded=""
+ 		/>
+	
+  <hotspot  name="hotspot_7" style="link_hs_sm"  ath="89.8715" atv="38.8991" width="552.03"  height="prop"  rotate="0.58" alpha="0" capture="false" depth="off" distorted="true" zorder="5"
+            url="%CURRENTXML%/add_hotspot/picture/57.8_-89.9_-0.5_-38.9.jpg" url.mobile="%CURRENTXML%/add_hotspot/picture/57.8_-89.9_-0.5_-38.9.jpg" image2="0"
+ 			hfov_ptgui="57.8" yaw_ptgui="-89.9" pitch_ptgui="-0.5" roll_ptgui="-38.9"
+ 			install_onclick="10" scene_EL="scene_114" name_hs="hotspot_7" fov_EL="110" drag_hs="false" enabled2="true" visible2="true"
+ 			onclick="" onhover="0" onover="0" ondown="drag_LinkSM()" onout="0" handcursor="true" onloaded="0"
+ 		/>
+	
+  <hotspot  name="hotspot_1" style="link_hs_sm"  ath="-23.5695" atv="22.359" width="185.34"  height="prop"  rotate="0.46" alpha="0" capture="false" depth="off" distorted="true" zorder="5"
+            url="%CURRENTXML%/add_hotspot/picture/21_25.1_20.6_8.9.png" url.mobile="%CURRENTXML%/add_hotspot/picture/21_25.1_20.6_8.9.png" image2="0"
+ 			hfov_ptgui="21" yaw_ptgui="25.1" pitch_ptgui="20.6" roll_ptgui="8.9"
+ 			install_onclick="10" scene_EL="scene_113" name_hs="hotspot_1" fov_EL="120" drag_hs="false" enabled2="true" visible2="true"
+ 			onclick="" onhover="" onover="0" ondown="drag_LinkSM()" onout="0" handcursor="true" onloaded="0"
+ 		/>
+	
+  <hotspot  name="hotspot_8" style="link_hs_sm"  url="%CURRENTXML%/assets/img/btn_click.png" distorted="false" alpha="1" enabled="false" visible="false" capture="true" depth="off" flying="0" handcursor="true" zorder="99" zoom="false"
+ 			ath="88.7818" atv="37.0684" width="50" height="prop" rx="0" ry="0" rz="0" ox="0" oy="0" rotate="0" scale="1" edge="center"
+ 			install_onclick="5" name_hs="hotspot_8" scene_EL="scene_114" info_Ah="null" fov_EL="110" enabled2="true" visible2="true" drag_hs="true"
+ 			onclick="if(hotspot[hotspot_7].alpha === 0, tween(hotspot[hotspot_7].alpha,1),tween(hotspot[hotspot_7].alpha,0));"
+ 			onhover=""
+ 			onover=""
+ 			ondown="drag_LinkSM()"
+ 			onout=""
+ 			onloaded=""
+ 		/>
+	
+ <style name="pl_hs_add_hs"
+ 		keep="true"
+ 		enabled="false"
+ 		visible="true"
+		enabled2="null"
+ 		visible2="null"
+ 		alpha="1"
+ 		alpha2="1"
+ 		capture="false"
+ 		handcursor="true"
+ 		zorder="10"
+ 		install_onclick="14"
+ 		showtext_pol="true"
+ 		showtext_pol2="true"
+ 		fov_EL="90"
+ 		fillcolor="16711680"
+ 		fillcolor2="10699872"
+ 		fillalpha="0.98"
+ 		fillalpha2="0.78"
+ 		borderwidth="5"
+ 		borderwidth2="10"
+ 		bordercolor="6911"
+ 		bordercolor2="16733525"
+ 		borderalpha="1.00"
+ 		borderalpha2="1.00"
+ 		onover="set_pol_1(get(name));"
+ 		onout="set_pol_2();"
+ 		onhover="if(showtext_pol,showtext(get(name_hs), STYLE1_LinkSM));"
+ 		onclick=""
+ 		ondown="ondown_pl_hs();"
+ 		blendmode="normal"
+ 		onloaded="null"
+ 		polyline="false"
+ 		hs_linkedscene="null"
+	 />
+
+	 <!-- polygonal hotspot -->
+
+
+ 
+</krpano>

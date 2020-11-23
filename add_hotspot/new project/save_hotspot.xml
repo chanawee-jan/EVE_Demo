@@ -1,0 +1,48 @@
+
+<krpano>
+
+  <data name="pin_cod_addhs_sm"></data>
+	
+	<addhs_settings  sound_close_click="false" 
+ 					 video_close_click="false" 
+ 					 youtube_close_click="false" 
+ 		   		/>
+	
+	
+ <style name="pl_hs_add_hs"
+ 		keep="true"
+ 		enabled="false"
+ 		visible="true"
+ 		alpha="1"
+ 		alpha2="1"
+ 		capture="false"
+ 		handcursor="true"
+ 		zorder="10"
+ 		install_onclick="14"
+ 		showtext_pol="true"
+ 		showtext_pol2="true"
+ 		fov_EL="90"
+ 		fillcolor="16711680"
+ 		fillcolor2="10699872"
+ 		fillalpha="0.98"
+ 		fillalpha2="0.78"
+ 		borderwidth="5"
+ 		borderwidth2="10"
+ 		bordercolor="6911"
+ 		bordercolor2="16733525"
+ 		borderalpha="1.00"
+ 		borderalpha2="1.00"
+ 		onover="set_pol_1(get(name));"
+ 		onout="set_pol_2();"
+ 		onhover="if(showtext_pol,showtext(get(name_hs), STYLE1_LinkSM));"
+ 		onclick=""
+ 		ondown="ondown_pl_hs();"
+ 		blendmode="normal"
+ 		onloaded="null"
+ 		polyline="false"
+	 />
+
+	
+
+ 
+</krpano>

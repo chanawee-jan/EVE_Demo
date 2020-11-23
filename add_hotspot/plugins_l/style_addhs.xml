@@ -1,0 +1,82 @@
+
+<krpano>
+
+	<include url="../save_hotspot.xml" />
+     
+	<include url="picture/showtext.xml" />
+	
+	<!-- the style pop-up text when you hover your mouse over the link -->
+	<textstyle name="STYLE1_LinkSM"
+	           font="Arial" fontsize.no-mobile="18" fontsize.mobile="18" bold="true" italic="true" xoffset="0" yoffset="-20"
+	           background="true" backgroundcolor="0x006868" backgroundalpha="0.5"
+	           border="false" borderwidth="0" bordercolor="0xFFFFFF" roundedge="3"
+	           textcolor="0xFFFFFF"
+	           padding="4 5"
+	           textalign="center" textshadowrange="2"   
+			   textshadow ="3"
+	           />	
+			   
+	<textstyle name="STYLE1_LinkSM2"
+	           font="Arial" fontsize.no-mobile="17" bold="false" italic="true" xoffset="0" yoffset="-20"
+	           background="true" backgroundcolor="0x006868" backgroundalpha="0.6"
+	           border="false" borderwidth="0" bordercolor="0xFFFFFF" roundedge="3"
+	           textcolor="0xFFFFFF"
+	           padding="4 5" textshadow ="3" textshadowrange="2"  
+	           textalign="center"           
+	           />
+			   
+	<!-- Стиль подписи фото -->         		   
+	<style name="tit_photo_adhs" enabled="false" type="text" css="font-family:Comic Sans MS, Comic Sans, cursive, Arial; color:#FFFFFF; font-size:20px;" 
+		    x="0" y="-40" padding="3 7" keep="true" align="bottom" zorder="51" alpha="0"
+			background="false" backgroundcolor="0x2D3E50" backgroundalpha="0.7"			   
+			border="false" bordercolor="0xFFFFFF" borderalpha="0.8" borderwidth="1.0"	roundedge="2"    
+			shadow="5.0"  shadowrange="3.0"  shadowangle="45"  shadowcolor="0x2D3E50"  shadowalpha="0"
+			textshadow="0.0" textshadowrange="4.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1.0"
+			wordwrap="false" 
+		  />
+			   			
+	<!-- Фон  -->
+	<style name="freim_bg_Adhs" type="container" alpha="0" keep="true" align="lefttop"  width="100%" height="100%" zorder="50" safearea="false"
+		   bgcolor="0x000000"  bgalpha="0.7" bgcapture="true" handcursor="false"  ondown="" />
+		   
+	<!-- Палец громкости  -->
+	<layer name="volume_finger"  keep="true" url="%CURRENTXML%/add_hotspot/plugins_l/picture/volume_finger.png" align="right" x="15"  y="0" scale="0.5" enabled="false" alpha="0" /> 	
+
+	<!-- Стиль хотспотов --> 
+    <style	name="link_hs_sm" type="image" keep="true" width="100" height="prop" visible="false" enabled="false" onhover="showtext(get(name_hs), STYLE1_LinkSM);"  zorder="5" depth="off"
+			onloaded="" />	
+
+	<!-- Стиль текстового хотспота   add hotspot. krpano. Test Test Test Test --> 
+    <style	name="text_hs_sm" html="Text" keep="true" capture="true" visible="false" enabled="false" edge="lefttop" 
+			width="100" height="30" alpha="1" scale="1" distorted="true"  handcursor="true" zorder="4" padding="5 0 0 33"
+			css="font-family:Arial; font-size:18px; color:#FFFFFF;"  txtshadow="0 0 0 0х000000 0.5"
+			bgcolor="0x777777" bgalpha="0.8"  bgborder="1 0xFFFFFF 1" bgroundedge="3 3 3 3"  bgshadow="0 0 0 0х000000 0.5"
+			vcenter="true" oversampling="2.0"
+			ondown="drag_LinkSM()" onhover="showtext(get(name_hs), STYLE1_LinkSM);" onloaded="" 
+		/>	
+
+		
+	<!-- ////////////////////   Buttons   ////////////////////////////// -->	 	
+	
+	<!-- Close photo button. Кнопка закрыть фотографию -->	   
+	<layer name="close6_photo"  keep="true" align="righttop" x="25"  y="25" url="%CURRENTXML%/add_hotspot/plugins_l/picture/close.png" zorder="51" 
+	        width="25" height="prop" alpha="0" edge="center" visible="true" bgcapture="true" handcursor="true"
+	        onover="tween(width,25,0.2);" onout="tween(width,20,0.2);" onclick="delayedcall(0.3,close_photo_add_hs();); tween(alpha,0); set(enabled,false);"/>	
+	<!-- Close youtube  закрыть youtube  -->	   
+	<layer name="close8_youtube"  keep="true" align="righttop" x="23"  y="23" url="%CURRENTXML%/add_hotspot/plugins_l/picture/close.png" zorder="51" 
+	        width="20" height="prop" alpha="0" edge="center" visible="true" bgcapture="true" handcursor="true"
+	        onover="tween(width,25,0.2);" onout="tween(width,20,0.2);" onclick="delayedcall(0.3,youtubeplayer_close();); tween(alpha,0); set(enabled,false);" />
+	<!-- Close video   Кнопка закрыть видео-->	   
+	<layer name="close7"  keep="true" align="righttop" x="23"  y="23" url="%CURRENTXML%/add_hotspot/plugins_l/picture/close.png" zorder="55" 
+	        width="20" height="prop" alpha="0" edge="center" visible="true" bgcapture="true" handcursor="true"
+	        onover="tween(width,25,0.2);" onout="tween(width,20,0.2);" onclick="delayedcall(0.3,videoplayer_close();); tween(alpha,0); set(enabled,false);" />
+	<!-- play video    Кнопка плей видео -->	   
+	<layer name="play_vid_icon"  keep="true" align="center"  url="%CURRENTXML%/add_hotspot/plugins_l/picture/media_playback_start.png" zorder="100" enabled="false" visible="false" scale="0.7"
+	        width="100" height="prop" alpha="1" edge="center" bgcapture="false" handcursor="false" />
+	<!-- close_freim_url   Кнопка закрыть -->	   
+	<layer name="close_freim_url_addhs"  keep="true" align="righttop" x="35"  y="23" url="%CURRENTXML%/add_hotspot/plugins_l/picture/close.png" zorder="51" 
+	        width="20" height="prop" alpha="1" edge="center" visible="false" bgcapture="true" handcursor="true" onclick="" />		
+			
+			
+		
+</krpano>

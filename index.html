@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>EVE Kitchenware | Virtual tour</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="description" content="EVE เรานำเข้าและจัดจำหน่ายเครื่องใช้ไฟฟ้า เครื่องครัวต่างๆ ไม่ว่าจะเป็น เตาแก๊ส เตาเซรามิค เตาอินดักชั่น เตาอบ เครื่องดูดควันชนิดต่างๆ อ่างล้างจาน ก็อกน้ำครัว และอื่นๆอีกมากมาย">
+		<link rel="canonical" href="https://www.eve.co.th/">
+		<meta property="og:locale" content="th_TH">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="EVE Cooking&amp;Washing Solution">
+		<meta property="og:keywords" content="เครื่องครัว,เตาแก๊ส,เตาเซรามิค,เตาอินดักชั่น,เตาอบ,เครื่องดูดควัน,อ่างล้างจาน,ก็อกน้ำครัว">
+		<meta property="og:description" content="EVE เรานำเข้าและจัดจำหน่ายเครื่องใช้ไฟฟ้า เครื่องครัวต่างๆ ไม่ว่าจะเป็น เตาแก๊ส เตาเซรามิค เตาอินดักชั่น เตาอบ เครื่องดูดควันชนิดต่างๆ อ่างล้างจาน ก็อกน้ำครัว และอื่นๆอีกมากมาย">
+		<meta property="og:url" content="https://www.eve.co.th/">
+		<meta property="og:site_name" content="https://www.eve.co.th/">
+		<meta property="og:image" content="https://www.eve.co.th/img/logo-red.png">
+		<meta property="og:image:secure_url" content="https://www.eve.co.th/img/logo-red.png">
+		<!-- favicon
+		============================================ 	-->
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.eve.co.th/img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./interactive/style.css">
+		
+	<style>
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+</head>
+<body>
+	
+
+<script src="tour.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+		embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
+	</script>
+</div>
+
+<div id="H22bg">
+	<audio id="H22myAudio1" loop>
+		<source src="./interactive/H22sound/level1.m4a" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="H22myAudio2" loop>
+		<source src="./interactive/H22sound/level2.m4a" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="H22myAudio3" loop>
+		<source src="./interactive/H22sound/level3.m4a" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<img id="H22open" onclick="changeimage()" src="./interactive/H22images/button/click.png">
+
+	<div id="H22wrapper">
+		<input id="H22volume" type="range" onchange="sound(this.value)" min="0" max="100" step="1" />
+		<label class="visually-hidden" for="volume">Volume</label>
+	</div>
+
+	<img id="H22bt1" onclick="off()" src="./interactive/H22images/button/open.png">
+	<img id="H22bt2" src="./interactive/H22images/button/open.png">
+	<img id="H22bt3" src="./interactive/H22images/button/open.png">
+	<img id="H22bt4" src="./interactive/H22images/button/open.png">
+	<img id="H22close" onclick="closebg()" src="./interactive/H22images/button/close.png">
+</div>
+
+
+
+<div id="OLYMPUSbg">
+	<audio id="OLYMPUSmyAudio2" loop>
+		<source src="./interactive/OLYMPUSsound/level2.m4a" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!-- <canvas id="OLYMPUScanvas"></canvas> -->
+
+	<img id="OLYMPUSopen" onclick="OLYMPUSchangeimage()" src="./interactive/OLYMPUSimages/button/click2.png">
+	<img id="OLYMPUSclose" onclick="OLYMPUSclosebg()" src="./interactive/OLYMPUSimages/button/close.png">
+
+	<div id="OLYMPUSmydiv">
+		<img id="OLYMPUSmydivheader" src="./interactive/OLYMPUSimages/button/hand.png">
+	</div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script language="JavaScript" type="text/javascript" src="./interactive/java.js" ></script>
+
+
+
+</body>
+</html>
